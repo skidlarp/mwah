@@ -1,7 +1,7 @@
-// © 2024 nigger.xyz | All rights reserved.
+// © 2024 twerking.lol | All rights reserved.
 
 window.addEventListener('load', () => {
-    const bios = ["localhost ddoser", "I'm cooler, skidder", "ass, ass, ass", "I hate all niggers", "I am the master", "owner @ nigger.xyz", "2PACALYPSE @ discord.gg/uam", "no limit gang", "Tracer C2 @ discord.gg/uam", "Dev of 2PACALYPSE 2.5", "socks full of semen"];
+    const bios = ["localhost ddoser", "im cooler, skidder", "ass, ass, ass", "i am the master", "owner of twerking.lol", "owner @ nigger.xyz", "Developer @ tracer", "Remade 2PACALYPSE"];
     const bioContainer = document.querySelector('#bio');
     let currentBioIndex = 0;
   
