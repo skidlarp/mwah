@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@Vital ~ raping.homes</title>
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        document.onkeydown = function (e) {
+            if (e.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.which == 3 || (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0))) {
+                window.open("https://www.google.com/search?q=how+to+not+be+a+skid");
+                return false;
+            }
+        }
+   
+        const titles = ["packet pirates", "S-s-s-swat??", "scary", "tragic.", "im", "not", "real"];
+
+        function changeTitle() {
+            let index = 0;
+            return function () {
+                document.title = titles[index];
+                index = (index + 1) % titles.length;
+            };
+        }
+
+        setInterval(changeTitle(), 100);
+    </script>
+    <style>
+        html {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        body {
+            background-color: #060707;
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            font-family: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        #blur-box1 {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 31px;
+            width: 35%;
+            background-color: rgba(0, 0, 0, 0);
+            backdrop-filter: blur(0px);
+            border-radius: 10px;
+            color: rgba(255, 255, 255, 0.774);
+            text-align: center;
+            animation: fadein 1s forwards;
+        }
+
+        #profile-picture {
+            width: 100px;
+            height: 100px;
+            background-color: #ffffff00;
+            border-radius: 50%;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+        }
+
+            #profile-picture img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        #username {
+            color: rgb(0, 0, 0);
+            font-size: 35px;
+            margin-top: 130px;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+            font-family: 'user'
+        }
+
+        #bio {
+            font-size: 16px;
+            margin-top: 10px;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+        }
+
+        #video-background {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            animation: fadein 1s forwards;
+        }
+
+        .glowing-text {
+            color: white;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        }
+
+        .next {
+            top: 50%;
+            left: 50%;
+            color: #fff;
+            position: absolute;
+            font-weight: normal;
+            font-size: 20px;
+            transform: translate(-50%, -50%);
+            font-family: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+        }
+
+        .social-icon {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            margin: 10px;
+            font-size: 34px;
+            text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .discord-stuff {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            margin: 12px;
+            font-size: 34px;
+            text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-icon:hover {
+            color: #ffffff;
+            transform: scale(1.2);
+        }
+
+        @keyframes fadeout {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .box {
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            background-color: rgba(0, 0, 0, 0);
+            border-radius: 20px;
+            margin: 10px;
+            text-align: fill;
+            line-height: 100px;
+        }
+
+        .nerdy-pen {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            height: 100vh;
+            &__text
+
+        {
+            color: #fff;
+            font-family: 'HelpMe';
+            padding: 1em 2em;
+            text-align: center;
+            font-size: 1.0em;
+        }
+
+        }
+
+        @font-face {
+            font-family: 'HelpMe';
+            src: url('fonts/HelpMe.ttf');
+        }
+
+        @font-face {
+            font-family: 'user';
+            src: url('fonts/user.ttf')
+        }
+
+        .text {
+            color: rgb(255, 255, 255);
+            font-family: "helpme";
+            src: url('/fonts/HelpMe.ttf');
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        @font-face {
+            font-family: 'HelpMe';
+            src: url('fonts/HelpMe.ttf');
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="button"><b class="next glowing-text">{$}</b></div>
+    <div id="blur-box1">
+        <div id="profile-picture">
+            <img src="files/pfp.jpg" alt="Profile Picture">
+        </div>
+        <div id="username">@Vital</div>
+        <h1 class="text">
+            <span class="txt-rotate"
+                  data-period="1500"
+                  data-rotate='[ "Packet4Packet", ".gg/uam", "ego hunter", "M4M", "Go Getter" ]'></span>
+        </h1>
+        <a href="https://discord.gg/uam" class="social-icon"><img src="files/dicord.png" /></a>
+    </div>
+    <video id="video-background" loop>
+        <source src="videos/background.mp4" type="video/mp4">
+    </video>
+    <script>
+        document.getElementById("button").addEventListener("click", function () {
+            var button = this;
+            button.style.animation = "fadeout 1s forwards";
+
+            var bgAudio = document.getElementById("video-background");
+            document.getElementById("blur-box1").style.display = "block";
+            document.getElementById("video-background").style.display = "block";
+            bgAudio.play();
+        });
+    </script>
+    <script>
+        var TxtRotate = function (el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtRotate.prototype.tick = function () {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+            var that = this;
+            var delta = 300 - Math.random() * 100;
+
+            if (this.isDeleting) { delta /= 2; }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function () {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function () {
+            var elements = document.getElementsByClassName('txt-rotate');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-rotate');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+            document.body.appendChild(css);
+        };</script>
+</body>
+</html>

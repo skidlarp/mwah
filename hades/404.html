@@ -1,0 +1,123 @@
+<!-- © 2024 twerking.lol | All rights reserved. -->
+
+<!DOCTYPE html>
+<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script>
+<html lang="en">
+    <head>
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="twerking.lol">
+        <meta property="og:url" content="https://twerking.lol/">
+        <meta property="og:title" content="twerking.lol">
+        <meta property="og:description" content="100% real, 0% gay">
+        <meta property="og:image" href="https://twerking.lol/files/carti.png">
+        <link rel="shortcut icon" href="https://twerking.lol/files/icon.ico" type="image/x-icon">
+        <link rel="icon" href="https://twerking.lol/files/icon.ico" type="image/x-icon">
+        <link rel="icon" sizes="32x32" href="https://twerking.lol/files/icon-32x32.png" type="image/png">
+        <link rel="icon" sizes="16x16" href="https://twerking.lol/files/icon-16x16.png" type="image/png">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://twerking.lol/tailwind.min.css">
+        <link rel="stylesheet" href="https://twerking.lol/all.min.css">
+        <link rel="stylesheet" href="https://twerking.lol/main.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"/>
+        <title>twerking.lol</title>
+
+		<style>
+            body {
+                transition: background-color 2s;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+    }
+            .flash-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 0, 0, 0.5); 
+                z-index: 9999;
+                display: none;
+                animation: flashOverlay 1s infinite;
+            }
+            .flash-text {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 24px;
+                font-weight: bold;
+                text-align: center;
+                color: red;
+                display: none;
+                animation: flashText 1s infinite;
+                z-index: 9999;
+            }
+
+            @keyframes flashOverlay {
+                0%, 49% {
+                    opacity: 0;
+                }
+                50%, 100% {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes flashText {
+                0%, 49% {
+                    opacity: 0;
+                }
+                50%, 100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+		<div class="notification-box flex flex-col items-center justify-center fixed w-full z-50 p-3"></div>
+		
+		<div class="overlay">
+			<h1> </h1>
+			<p>[ $ ]</p>
+		</div>
+		
+		<div class="background">
+			<video loop preload id="vbg">
+				<source src="https://twerking.lol/files/$cars Hittin That Notti Bop!.mp4">
+			</video>
+			<script>
+				var video = document.currentScript.parentElement;
+				video.volume = 0.3;
+			</script>
+			<div id="snow">
+				<script src="https://twerking.lol/snow.js"></script>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="user-info">
+				<div class="username-container">
+					<h1>You actually found this page.</h1>
+				</div>
+				<p>If you got here trying to skid. Just hit ctrl and my github will appear. Sorry for the inconvenience!</p>
+			</div>
+		</div>
+		
+		<div id="flash-overlay" class="flash-overlay" style="display: none;"></div>
+		<div id="flash-text" class="flash-text" style="display: none;"></div>		
+		<div class="fade" id="fade-screen"></div>
+	
+		<script src="https://twerking.lol/jquery.min.js"></script>
+		<script src="https://twerking.lol/ie.js"></script>
+		<script src="https://twerking.lol/features.js"></script>
+		<script src="https://twerking.lol/files/019824785sne1.js"></script>
+		<script>
+			var titles = ["twerking.lol?", "are you real?", "die?", "npc?", "whos hades?", "rando?", "drone?", "my dicks bigger, skidder", "I am your master", "ass, ass, ass", "I hate all niggers", "I am the master", "smokin ur deads?", "private biolink?", "who coded me?", "hijacked Hades acc?", "/uam better!"];
+			var currentTitleIndex = 0;
+			function changeTitle() {
+				document.title = titles[currentTitleIndex];
+				currentTitleIndex = (currentTitleIndex + 1) % titles.length;
+			}
+			setInterval(changeTitle, 250);
+		</script>
+	</body>
+	
